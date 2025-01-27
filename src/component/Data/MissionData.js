@@ -63,7 +63,8 @@ const MissionData = () => {
           </table>
         </div>
 
-<img src={map} alt="map_image" />
+
+<img src={map} alt="map_image" className="h-80 w-full object-fill" />
 
       </div>
     </CollapsibleSection>
