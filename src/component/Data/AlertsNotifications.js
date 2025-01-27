@@ -38,7 +38,7 @@ const AlertsNotifications = () => {
               <th className="px-6 py-3 text-left text-xs font-medium  uppercase">Notifications</th>
             </tr>
           </thead>
-          <tbody className={` ${darkMode ? "bg-black divide-y divide-gray-700 text-gray-100" : "bg-white divide-y divide-gray-200 text-gray-100" }  `}>
+          <tbody className={` ${darkMode ? "bg-black divide-y divide-gray-700 text-gray-100" : "bg-white divide-y divide-gray-200 text-gray-700" }  `}>
             {alerts.map((alert, index) => (
               <tr key={index}>
                 <td className="px-6 py-4 text-sm ">{alert.id}</td>
