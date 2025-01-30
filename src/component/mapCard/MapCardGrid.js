@@ -1,8 +1,13 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import MapCard from "./MapCard"
+import axios from "axios";
+import { API_URL } from "../../asset/util/AppAsset";
 
 const MapCardGrid = () => {
   // Sample data for demonstration
+
+
+
   const cards = [
     {
       id: 1,
@@ -15,7 +20,7 @@ const MapCardGrid = () => {
         fromCS: "4000",
         battery: "98",
       },
-      link:"/tam"
+      link: "/tam"
     },
     {
       id: 2,
@@ -28,7 +33,7 @@ const MapCardGrid = () => {
         fromCS: "4000",
         battery: "98",
       },
-      link:"/tam"
+      link: "/tam"
     },
     {
       id: 3,
@@ -41,7 +46,7 @@ const MapCardGrid = () => {
         fromCS: "4000",
         battery: "98",
       },
-      link:"/tam"
+      link: "/tam"
     },
     {
       id: 4,
@@ -54,7 +59,7 @@ const MapCardGrid = () => {
         fromCS: "4000",
         battery: "98",
       },
-      link:"/tam"
+      link: "/tam"
     },
     {
       id: 5,
@@ -67,7 +72,7 @@ const MapCardGrid = () => {
         fromCS: "4000",
         battery: "98",
       },
-      link:"/tam"
+      link: "/tam"
     },
     {
       id: 6,
@@ -80,7 +85,7 @@ const MapCardGrid = () => {
         fromCS: "4000",
         battery: "98",
       },
-      link:"/tam"
+      link: "/tam"
     },
     {
       id: 7,
@@ -93,7 +98,7 @@ const MapCardGrid = () => {
         fromCS: "4000",
         battery: "98",
       },
-      link:"/tam"
+      link: "/tam"
     },
     {
       id: 8,
@@ -106,7 +111,7 @@ const MapCardGrid = () => {
         fromCS: "4000",
         battery: "98",
       },
-      link:"/tam"
+      link: "/tam"
     },
     {
       id: 9,
@@ -119,9 +124,15 @@ const MapCardGrid = () => {
         fromCS: "4000",
         battery: "98",
       },
-      link:"/tam"
+      link: "/tam"
     },
   ]
+
+
+
+
+
+
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
